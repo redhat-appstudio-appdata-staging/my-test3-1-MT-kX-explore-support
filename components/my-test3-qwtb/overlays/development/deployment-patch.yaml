@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: my-test3-qwtb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/mkosiarc-tenant/my-test3-1/my-test3-qwtb@sha256:5ea452bb093185651015a6e83f7ae1da5cbb95be6050b1e4ca29304ed5cf685d
+        name: container-image
+        resources: {}
+status: {}
